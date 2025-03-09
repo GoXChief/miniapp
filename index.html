@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram Team Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Главный экран -->
+  <div id="mainPage" class="page">
+    <!-- Контент страницы -->
+    <div id="content">
+      <!-- Раздел РАБОТА -->
+      <div id="workSection" class="section">
+        <h2>РАБОТА</h2>
+        <form id="workForm">
+          <textarea id="workContent" placeholder="Введите контент для работы" required></textarea>
+          <button type="submit">Добавить</button>
+        </form>
+        <div id="workList"></div>
+      </div>
+      <!-- Раздел БИРЖА -->
+      <div id="marketSection" class="section hidden">
+        <h2>БИРЖА</h2>
+        <form id="marketForm">
+          <textarea id="marketContent" placeholder="Введите контент для биржи" required></textarea>
+          <button type="submit">Добавить</button>
+        </form>
+        <div id="marketList"></div>
+      </div>
+      <!-- Раздел ЗАДАЧИ -->
+      <div id="tasksSection" class="section hidden">
+        <h2>ЗАДАЧИ</h2>
+        <form id="taskForm">
+          <input type="text" id="taskTitle" placeholder="Название задачи" required>
+          <textarea id="taskDescription" placeholder="Описание задачи"></textarea>
+          <button type="submit">Добавить задачу</button>
+        </form>
+        <div id="taskList"></div>
+      </div>
+    </div>
+    <!-- Нижние кнопки -->
+    <div class="bottom-nav">
+      <button id="workButton" class="nav-button">РАБОТА</button>
+      <button id="marketButton" class="nav-button">БИРЖА</button>
+      <button id="tasksButton" class="nav-button">ЗАДАЧИ</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

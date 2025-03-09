@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#content {
+  flex: 1;
+  overflow-y: auto;
+}
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+.nav-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.section {
+  padding: 20px;
+}
+.hidden {
+  display: none;
+}
+.post, .task {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
